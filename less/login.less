@@ -1,0 +1,45 @@
+//嵌入全局样式
+@import (once) url('./style.less');
+
+body {
+    background: #ccc url('../images/bg-login.jpg') no-repeat center;
+    background-size: cover;
+    .grid {
+        height: 100%;
+        margin: 0!important;
+    }
+}
+
+.ui.large.secondary.pointing.menu{
+    position:relative;
+}
+
+.column {
+    overflow: hidden;
+
+    min-width: 330px;
+    max-width: 450px;
+}
+
+.logo {
+    position: fixed;
+    top: 50px;
+    left: 15px;
+    @media screen and (max-width: @screen-phone) {
+        a {
+            top: 5px;
+            width: 50px;
+        }
+    }
+}
+
+
+.form-block {
+    height: 285px;
+    position: relative;
+    form {
+        position: absolute!important;
+        width: 100%;
+        top: 0;
+    }
+}

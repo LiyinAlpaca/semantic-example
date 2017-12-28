@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>动态</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/unslider.css">
+    <link rel="stylesheet" type="text/css" href="css/content.min.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/semantic.min.js"></script>
+    <script type="text/javascript" src="js/calendar.min.js"></script>
+    <script type="text/javascript" src="js/unslider-min.js"></script>
+    <script type="text/javascript" src="js/sidebar.js"></script>
+</head>
+
+<body>
+    <!-- 侧边栏 -->
+    <div class="ui left vertical inverted sidebar labeled icon menu">
+        <a href="index.html" class="item">
+        <i class="home icon"></i>
+        主页
+    </a>
+        <a href="activity.html" class="item">
+        <i class="block layout icon"></i>
+        活动
+    </a>
+        <a href="chat.html" class="item">
+        <i class="comment outline icon"></i>
+        动态
+    </a>
+        <a href="log.html" class="item">
+        <i class="checked calendar icon"></i>
+        计划
+    </a>
+        <a href="login.html" class="item">
+        <i class="sign in icon"></i>
+        注册/登陆
+    </a>
+    </div>
+    <!-- 侧边栏 END -->
+    <div class="pusher">
+        <!-- 固定菜单栏 -->
+        <div class="ui large secondary pointing menu">
+            <a class="item toc ui vertical sidebar-toggle"><i class="sidebar icon large"></i></a>
+            <a href="index.html" class="item">主页</a>
+            <a href="activity.html" class="item">活动</a>
+            <a href="chat.html" class="item active">动态</a>
+            <a href="log.html" class="item">计划</a>
+            <div class="right item ">
+                <a class="ui button toc" href="login.html">注册/登陆</a>
+            </div>
+        </div>
+        <!-- 固定菜单栏  END -->
+        <!-- 浮动按钮 -->
+        <div class="flex-menu">
+            <div class="ui vertical buttons">
+                <button class="ui black button to-top-toggle"><i class="angle double up icon"></i></button>
+                <button class="ui black button sidebar-toggle"><i class="sidebar icon"></i></button>
+            </div>
+        </div>
+        <!-- content END -->
+        <!-- 正文 -->
+        <div class="ui two column centered grid">
+            <!-- 网格 -->
+            <!-- 左边响应的 -->
+            <div class="sixteen wide mobile sixteen wide tablet eight wide computer column">
+                <div class="ui container">
+                    <!-- 轮播图 -->
+                    <div class="ui computer only">
+                        <div class="my-slider">
+                            <ul>
+                                <li><img src="images/pic1.jpg"></li>
+                                <li><img src="images/pic2.jpg"></li>
+                                <li><img src="images/pic3.jpg"></li>
+                                <li><img src="images/pic4.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 轮播图 END -->
+                    <div class="ui feed">
+                        <form class="ui reply form">
+                            <h2>发布新动态</h2>
+                            <div class="field">
+                                <textarea placeholder="说点什么吧........"></textarea>
+                            </div>
+                            <div class="ui menu icon">
+                                <a class=" item ui blue button"><i class="icon edit"></i>提交</a>
+                                <a class="item">
+                                <i class="smile icon"></i>
+                            </a>
+                                <a class="item">
+                                <i class="image icon"></i>
+                            </a>
+                                <a class="item">
+                                <i class="video camera icon"></i>
+                            </a>
+                            </div>
+                        </form>
+                        <div class="event">
+                            <div class="label">
+                                <img src="images/huaji.png">
+                            </div>
+                            <div class="content">
+                                <div class="summary"><a class="user"> 张三 </a> 和您成为好友
+                                    <div class="date">1 小时前</div>
+                                </div>
+                                <div class="meta">
+                                    <a class="like"><i class="like icon"></i> 4 赞 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="label">
+                                <img src="images/huaji.png">
+                            </div>
+                            <div class="content">
+                                <div class="summary"><a>李白</a> 增加 <a>2 张 照片</a>
+                                    <div class="date">4 天前</div>
+                                </div>
+                                <div class="extra images">
+                                    <a><img src="images/image.png"></a>
+                                    <a><img src="images/image.png"></a>
+                                </div>
+                                <div class="meta">
+                                    <a class="like"><i class="like icon"></i> 1 赞 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="label">
+                                <img src="images/huaji.png">
+                            </div>
+                            <div class="content">
+                                <div class="summary"><a class="user"> 比利王 </a> 将你加为好友
+                                    <div class="date">2 天前</div>
+                                </div>
+                                <div class="meta">
+                                    <a class="like"><i class="like icon"></i> 8 赞 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="label">
+                                <img src="images/huaji.png">
+                            </div>
+                            <div class="content">
+                                <div class="summary"><a>Van</a> 发布了新动态
+                                    <div class="date">3 天前</div>
+                                </div>
+                                <div class="extra text">有没有人来一起去摔跤啊</div>
+                                <div class="meta">
+                                    <a class="like"><i class="like icon"></i> 5 赞 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="label">
+                                <img src="images/huaji.png">
+                            </div>
+                            <div class="content">
+                                <div class="summary"><a>滑稽哥</a> 上传 <a>2 张关于你的照片</a>
+                                    <div class="date">4 天前</div>
+                                </div>
+                                <div class="extra images">
+                                    <a><img src="images/image.png"></a>
+                                    <a><img src="images/image.png"></a>
+                                </div>
+                                <div class="meta">
+                                    <a class="like"><i class="like icon"></i> 41 赞 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui flex centered">
+                            <div class="ui pagination centered menu">
+                                <a class="active item">1</a>
+                                <a class="item">2</a>
+                                <a class="item">3</a>
+                                <a class="item">...</a>
+                                <a class="item">12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 左边响应的 END -->
+            <!-- 固定宽度 移动端隐藏 -->
+            <div class="computer only column">
+                <div class="ui container">
+                    <h2>个人资料</h2>
+                    <div class="ui card">
+                        <div class="image">
+                            <img src="images/huaji.png">
+                        </div>
+                        <div class="content">
+                            <a class="header">滑稽哥</a>
+                            <div class="meta">
+                                <span class="date">2017年加入</span>
+                            </div>
+                            <div class="description">滑稽是一种态度</div>
+                        </div>
+                        <div class="extra content">
+                            <a><i class="comment outline icon"></i> 22 动态 </a>
+                        </div>
+                    </div>
+                    <h2>日历</h2>
+                    <div class="ui calendar">
+                    </div>
+                </div>
+            </div>
+            <!-- 固定宽度 移动端隐藏 END -->
+            <!-- 网格  END -->
+        <!-- content END -->
+    </div>
+    <script>
+    jQuery(document).ready(function($) {
+        $('.my-slider').unslider({
+            autoplay: true,
+            animate: "fade",
+            arrows: {
+                prev: '<a class="unslider-arrow prev">←上一页</a>',
+                next: '<a class="unslider-arrow next">下一页→</a>',
+            },
+        });
+    });
+    </script>
+</body>
+
+</html>

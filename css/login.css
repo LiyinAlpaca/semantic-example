@@ -1,0 +1,424 @@
+/*******************************
+         Site Settings
+*******************************/
+/*-------------------
+       Fonts
+--------------------*/
+/*-------------------
+      Base Sizes
+--------------------*/
+/* This is the single variable that controls them all */
+/* The size of page text  */
+/*-------------------
+    Border Radius
+--------------------*/
+/* See Power-user section below
+   for explanation of @px variables
+*/
+/*-------------------
+    Brand Colors
+--------------------*/
+/*--------------
+  Page Heading
+---------------*/
+/*--------------
+   Form Input
+---------------*/
+/* This adjusts the default form input across all elements */
+/* Input Text Color */
+/* Line Height Default For Inputs in Browser (Descendors are 17px at 14px base em) */
+/*-------------------
+    Focused Input
+--------------------*/
+/* Used on inputs, textarea etc */
+/* Used on dropdowns, other larger blocks */
+/*-------------------
+        Sizes
+--------------------*/
+/*
+  Sizes are all expressed in terms of 14px/em (default em)
+  This ensures these "ratios" remain constant despite changes in EM
+*/
+/*-------------------
+        Page
+--------------------*/
+/*-------------------
+      Paragraph
+--------------------*/
+/*-------------------
+       Links
+--------------------*/
+/*-------------------
+    Scroll Bars
+--------------------*/
+/* Inverted */
+/*-------------------
+  Highlighted Text
+--------------------*/
+/*-------------------
+       Loader
+--------------------*/
+/*-------------------
+        Grid
+--------------------*/
+/*-------------------
+     Transitions
+--------------------*/
+/*-------------------
+     Breakpoints
+--------------------*/
+/*-------------------
+      Site Colors
+--------------------*/
+/*---  Colors  ---*/
+/*---  Light Colors  ---*/
+/*---   Neutrals  ---*/
+/*--- Colored Backgrounds ---*/
+/*--- Colored Headers ---*/
+/*--- Colored Text ---*/
+/*--- Colored Border ---*/
+/*-------------------
+     Alpha Colors
+--------------------*/
+/*-------------------
+       Accents
+--------------------*/
+/* Differentiating Neutrals */
+/* Differentiating Layers */
+/*******************************
+           Power-User
+*******************************/
+/*-------------------
+    Emotive Colors
+--------------------*/
+/* Positive */
+/* Negative */
+/* Info */
+/* Warning */
+/*-------------------
+        Paths
+--------------------*/
+/* For source only. Modified in gulp for dist */
+/*-------------------
+       Em Sizes
+--------------------*/
+/*
+  This rounds @size values to the closest pixel then expresses that value in (r)em.
+  This ensures all size values round to exact pixels
+*/
+/* em */
+/* rem */
+/*-------------------
+       Icons
+--------------------*/
+/* Maximum Glyph Width of Icon */
+/*-------------------
+     Neutral Text
+--------------------*/
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+      Borders
+--------------------*/
+/*-------------------
+    Derived Values
+--------------------*/
+/* Loaders Position Offset */
+/* Rendered Scrollbar Width */
+/* Maximum Single Character Glyph Width, aka Capital "W" */
+/* Used to match floats with text */
+/* Header Spacing */
+/* Minimum Mobile Width */
+/* Positive / Negative Dupes */
+/* Responsive */
+/*-------------------
+  Exact Pixel Values
+--------------------*/
+/*
+  These are used to specify exact pixel values in em
+  for things like borders that remain constantly
+  sized as emSize adjusts
+
+  Since there are many more sizes than names for sizes,
+  these are named by their original pixel values.
+
+*/
+/* Columns */
+/*******************************
+             States
+*******************************/
+/*-------------------
+      Disabled
+--------------------*/
+/*-------------------
+        Hover
+--------------------*/
+/*---  Shadows  ---*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+        Focus
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+    Down (:active)
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+        Active
+--------------------*/
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+/*---  Brand   ---*/
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/* line 20, style.less */
+.no-border {
+  border: none!important;
+  -webkit-box-shadow: 0 0 0 0!important;
+          box-shadow: 0 0 0 0!important;
+}
+/* line 25, style.less */
+.no-border:before {
+  display: none!important;
+}
+/* line 29, style.less */
+.no-border:after {
+  display: none!important;
+}
+/* line 33, style.less */
+.hidden {
+  display: none;
+}
+@media screen and (max-height: 768px) {
+  /* line 38, style.less */
+  .ui.computer.only {
+    display: none!important;
+  }
+}
+/* line 43, style.less */
+.ui.menu.inline {
+  border: none!important;
+  -webkit-box-shadow: 0 0 0 0!important;
+          box-shadow: 0 0 0 0!important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 46, style.less */
+.ui.menu.inline .item {
+  padding: 5px;
+}
+/* line 49, style.less */
+.ui.menu.inline .item:first-of-type {
+  padding: 5px 5px 5px 0;
+}
+/* line 52, style.less */
+.ui.menu.inline .item:last-of-type {
+  padding: 5px 0;
+}
+/* line 57, style.less */
+.sidebar-toggle {
+  z-index: 10;
+}
+/* line 61, style.less */
+.flex-menu {
+  position: fixed;
+  z-index: 1000;
+  right: 50px;
+  bottom: 0;
+  bottom: 50px;
+  opacity: .5;
+  display: none;
+}
+/* line 70, style.less */
+.flex-menu .buttons {
+  width: 50px;
+  height: 100px;
+}
+@media screen and (max-width: 480px) {
+  /* line 77, style.less */
+  .flex-menu {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+/* line 83, style.less */
+.secondary.pointing.menu .toc.item {
+  display: none;
+  overflow: hidden;
+  max-width: 100%;
+  height: 50px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 92, style.less */
+  .ui.fixed.menu {
+    display: none;
+  }
+  /* line 95, style.less */
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  /* line 99, style.less */
+  .secondary.pointing.menu .toc.item {
+    display: block;
+    border: none;
+  }
+}
+/* line 107, style.less */
+.comment img {
+  width: 35px;
+  height: 35px;
+}
+@media screen and (max-width: 480px) {
+  /* line 114, style.less */
+  .ui.menu.inline {
+    margin-top: 0;
+  }
+  /* line 116, style.less */
+  .ui.menu.inline .item,
+  .ui.menu.inline a {
+    width: 100%;
+    min-height: 32px;
+    text-align: center;
+  }
+}
+/* line 126, style.less */
+.ui.cards {
+  padding-bottom: 15px;
+  text-align: left;
+}
+/* line 132, style.less */
+.ui.card {
+  text-align: left;
+}
+/* line 134, style.less */
+.ui.card .extra.content {
+  text-align: center;
+}
+/* line 139, style.less */
+.icon.circular:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 144, style.less */
+.logo a {
+  font-size: 24px;
+  line-height: 50px;
+  display: block;
+  overflow: hidden;
+  width: 150px;
+  height: 50px;
+  padding-left: 50px;
+  cursor: pointer;
+  text-align: center;
+  color: #000;
+  color: #00b5ad;
+  border-radius: 4px;
+  background: #fff;
+}
+/* line 163, style.less */
+.logo a:hover {
+  background: #eee;
+}
+/* line 166, style.less */
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+/* line 179, style.less */
+.grid {
+  margin: 0!important;
+}
+/* line 183, style.less */
+.ui.flex.centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@keyframes updown {
+  /* line 192, style.less */
+  from {
+    top: 10px;
+  }
+  /* line 195, style.less */
+  to {
+    top: -10px;
+  }
+}
+@-webkit-keyframes updown {
+  /* line 216, style.less */
+  from {
+    top: 10px;
+  }
+  /* line 219, style.less */
+  to {
+    top: -10px;
+  }
+}
+/* line 4, login.less */
+body {
+  background: #cccccc url('../images/bg-login.jpg') no-repeat center;
+  background-size: cover;
+}
+/* line 7, login.less */
+body .grid {
+  height: 100%;
+  margin: 0!important;
+}
+/* line 13, login.less */
+.ui.large.secondary.pointing.menu {
+  position: relative;
+}
+/* line 17, login.less */
+.column {
+  overflow: hidden;
+  min-width: 330px;
+  max-width: 450px;
+}
+/* line 24, login.less */
+.logo {
+  position: fixed;
+  top: 50px;
+  left: 15px;
+}
+@media screen and (max-width: 480px) {
+  /* line 29, login.less */
+  .logo a {
+    top: 5px;
+    width: 50px;
+  }
+}
+/* line 37, login.less */
+.form-block {
+  height: 285px;
+  position: relative;
+}
+/* line 40, login.less */
+.form-block form {
+  position: absolute!important;
+  width: 100%;
+  top: 0;
+}

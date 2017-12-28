@@ -1,0 +1,234 @@
+//导入变量
+@import (less) url('../Semantic-UI-LESS/themes/default/globals/site.variables');
+//自定义响应
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+@screen-phone: @screen-xs-min;
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-tablet: @screen-sm-min;
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+@screen-desktop: @screen-md-min;
+@screen-lg: 1200px;
+@screen-lg-min: @screen-lg;
+@screen-lg-desktop: @screen-lg-min;
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+//全局样式
+.no-border {
+    border: none!important;
+    box-shadow: 0 0 0 0!important;
+}
+
+.no-border:before {
+    display: none!important;
+}
+
+.no-border:after {
+    display: none!important;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-height: @screen-tablet) {
+    .ui.computer.only {
+        display: none!important;
+    }
+}
+
+.ui.menu.inline {
+    .no-border;
+    flex-wrap: wrap;
+    .item {
+        padding: 5px;
+    }
+    .item:first-of-type {
+        padding: 5px 5px 5px 0;
+    }
+    .item:last-of-type {
+        padding: 5px 0;
+    }
+}
+
+.sidebar-toggle {
+    z-index: 10;
+}
+
+.flex-menu {
+    position: fixed;
+    z-index: 1000;
+    right: 50px;
+    bottom: 0;
+    bottom: 50px;
+    opacity: .5;
+
+    display: none;
+    .buttons {
+        width: 50px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: @screen-phone) {
+    .flex-menu {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+    overflow: hidden;
+
+    max-width: 100%;
+    height: 50px;
+}
+
+@media only screen and (max-width: @screen-phone) {
+    .ui.fixed.menu {
+        display: none;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+
+        border: none;
+    }
+}
+
+.comment {
+    img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: @screen-phone) {
+    .ui.menu.inline {
+        margin-top: 0;
+        .item,
+        a {
+            width: 100%;
+            min-height: 32px;
+
+            text-align: center;
+        }
+    }
+}
+
+.ui.cards,
+{
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.ui.card {
+    text-align: left;
+    .extra.content {
+        text-align: center;
+    }
+}
+
+.icon.circular:hover {
+    background: rgba(0, 0, 0, .1);
+}
+
+.logo {
+    a {
+        font-size: 24px;
+        line-height: 50px;
+
+        display: block;
+        overflow: hidden;
+
+        width: 150px;
+        height: 50px;
+        padding-left: 50px;
+
+        cursor: pointer;
+        text-align: center;
+
+        color: #000;
+        color: @teal;
+        border-radius: 4px;
+        background: #fff;
+    }
+    a:hover {
+        background: #eee;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+.grid {
+    margin: 0!important;
+}
+
+.ui.flex.centered {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+//上下蠕动动画
+@keyframes updown {
+    from {
+        top: 10px;
+    }
+    to {
+        top: -10px;
+    }
+}
+
+@-moz-keyframes updown
+/* Firefox */
+
+{
+    from {
+        top: 10px;
+    }
+    to {
+        top: -10px;
+    }
+}
+
+@-webkit-keyframes updown
+/* Safari and Chrome */
+
+{
+    from {
+        top: 10px;
+    }
+    to {
+        top: -10px;
+    }
+}
+
+@-o-keyframes updown
+/* Opera */
+
+{
+    from {
+        top: 10px;
+    }
+    to {
+        top: -10px;
+    }
+}

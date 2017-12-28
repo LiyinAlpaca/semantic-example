@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.min.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar.min.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/semantic.min.js"></script>
+    <script type="text/javascript" src="js/calendar.min.js"></script>
+    <script type="text/javascript" src="js/sidebar.js"></script>
+</head>
+
+<body>
+<!-- 侧边栏 -->
+<div class="ui left vertical inverted sidebar labeled icon menu">
+    <a href="index.html" class="item">
+        <i class="home icon"></i>
+        主页
+    </a>
+    <a href="activity.html" class="item">
+        <i class="block layout icon"></i>
+        活动
+    </a>
+    <a href="chat.html" class="item">
+        <i class="comment outline icon"></i>
+        动态
+    </a>
+    <a href="log.html" class="item">
+        <i class="checked calendar icon"></i>
+        计划
+    </a>
+    <a href="login.html" class="item">
+        <i class="sign in icon"></i>
+        注册/登陆
+    </a>
+</div>
+<!-- 侧边栏 END -->
+ <div class="pusher">
+    <!-- 固定菜单栏 -->
+    <div class="ui large secondary inverted pointing menu">
+        <a class="item toc ui vertical sidebar-toggle"><i class="sidebar icon large"></i></a>
+        <a href="index.html" class="item active">主页</a>
+        <a href="activity.html" class="item">活动</a>
+        <a href="chat.html" class="item">动态</a>
+        <a href="log.html" class="item">计划</a>
+        <div class="right item ">
+            <a class="ui inverted button toc" href="login.html">注册/登陆</a>
+        </div>
+    </div>
+    <!-- 固定菜单栏  END -->
+    <!-- 浮动按钮 -->
+    <div class="flex-menu">
+        <div class="ui vertical buttons">
+            <button class="ui black button to-top-toggle"><i class="angle double up icon"></i></button>
+            <button class="ui black button sidebar-toggle"><i class="sidebar icon"></i></button>
+        </div>
+    </div>
+    <!-- 浮动按钮 END -->
+    <div class="section" id="page-home">
+        <div class="jumbotron">
+            <h1>留下你的汗水展现你的风采</h1>
+            <p>青春的呼唤，心跳的韵律，生命的火焰，梦想的放飞。</p>
+            <a href="login.html" class="ui button teal">邀您参加</a>
+        </div>
+        <div class="learnmore">
+            <a class="to-page1-toggle">了解更多<br/><i class="angle down icon huge"></i></a>
+        </div>
+    </div>
+    <div class="section" id="page-1">
+        <div class="ui centered grid">
+            <div class="sixteen wide mobile sixteen wide tablet six wide computer column">
+                <div class="jumbotron">
+                    <h1>来一场说走就走的旅行</h1>
+                    <p>青春的呼唤，心跳的韵律，生命的火焰，梦想的放飞。</p>
+                </div>
+            </div>
+            <div class="three wide computer only column">
+                <div class="jumbotron">
+                    <div class="ui card">
+                        <div class="content">
+                            <div class="right floated meta">14小时前</div>
+                            来登山吧!
+                        </div>
+                        <div class="image">
+                            <img src="images/huodong.jpg">
+                        </div>
+                        <div class="content"><span class="right floated"> <i class="user icon"></i> 17 参加者 </span> <i
+                                class="comment icon"></i> 3 评论
+                        </div>
+                        <div class="extra content">
+                            <a href="#" class="ui button teal">立即加入</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="page-2">
+        <div class="ui centered grid">
+            <div class="three wide computer only column">
+                <div class="jumbotron">
+                    <div class="ui message">
+                        <div class="ui feed">
+                            <div class="event">
+                                <div class="label">
+                                    <img src="images/huaji.png">
+                                </div>
+                                <div class="content">
+                                    <div class="date">3 天前</div>
+                                    <div class="summary"><a>王小明</a> 上传了 2 张照片</div>
+                                    <div class="extra images">
+                                        <a><img src="images/image.png"></a>
+                                        <a><img src="images/image.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="event">
+                                <div class="label">
+                                    <img src="images/huaji.png">
+                                </div>
+                                <div class="content">
+                                    <div class="date">5 天前</div>
+                                    <div class="summary"><a>王小明</a> 念了两句诗词</div>
+                                    <div class="extra text">苟利国家生死以,
+                                        <br/>岂因祸福避趋之
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sixteen wide mobile sixteen wide tablet six wide computer column">
+                <div class="jumbotron">
+                    <h1>与好友分享你的动态</h1>
+                    <p>青春的呼唤，心跳的韵律，生命的火焰，梦想的放飞。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="page-3">
+        <div class="ui centered grid">
+            <div class="sixteen wide mobile sixteen wide tablet six wide computer column">
+                <div class="jumbotron">
+                    <h1>记录你的每一天</h1>
+                    <p>青春的呼唤，心跳的韵律，生命的火焰，梦想的放飞。</p>
+                </div>
+            </div>
+            <div class="three wide computer only column">
+                <div class="jumbotron">
+                    <div class="ui message">
+                        <table class="ui very basic collapsing celled table">
+                            <thead>
+                            <tr>
+                                <th>计划</th>
+                                <th>时间</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="ui image header">
+                                        跑步
+                                    </h4></td>
+                                <td>
+                                    2017/12/17/18:29
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="ui image header">
+                                        单车
+                                    </h4></td>
+                                <td>
+                                    15
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="ui image header">
+                                        游泳
+                                    </h4></td>
+                                <td>
+                                    2017/12/17/18:29
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="ui image header">
+                                        登山
+                                    </h4></td>
+                                <td>
+                                    2017/12/17/18:29
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="page-4">
+        <div class="jumbotron">
+            <div class="ui centered card">
+                <div class="image">
+                    <img src="images/QR.png">
+                </div>
+                <div class="content">
+                    <a class="header" href="login.html"><i class="icon tag"></i>立即加入</a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+</body>
+
+</html>

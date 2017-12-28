@@ -1,0 +1,166 @@
+//嵌入全局样式
+@import (once) url('./style.less');
+
+
+.ui.pointing.menu {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    margin:0;
+
+    width: 100%;
+}
+
+.section {
+    height: 568px;
+    .jumbotron {
+        position: relative;
+
+        display: -webkit-box;
+        /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+        display: -moz-box;
+        /* 老版本语法: Firefox (buggy) */
+        display: -ms-flexbox;
+        /* 混合版本语法: IE 10 */
+        display: -webkit-flex;
+        /* 新版本语法： Chrome 21+ */
+        display: flex;
+        /* 新版本语法： Opera 12.1, Firefox 22+ */
+        /*垂直居中*/
+        /*老版本语法*/
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+        text-align: center;
+
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        /*混合版本语法*/
+        -ms-flex-align: center;
+        /*新版本语法*/
+        -webkit-align-items: center;
+        align-items: center;
+        /*水平居中*/
+        /*老版本语法*/
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        /*混合版本语法*/
+        -ms-flex-pack: center;
+        /*新版本语法*/
+        -webkit-justify-content: center;
+        justify-content: center;
+        h1 {
+            font-size: 54px;
+
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+            height: 10rem;
+            margin-bottom: 20px;
+
+            text-transform: uppercase;
+
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        p {
+            font-size: 21px;
+
+            margin: 0 25px 40px 25px;
+        }
+        @media screen and (max-width: @screen-phone) {
+            h1 {
+                font-size: 38px;
+            }
+        }
+    }
+}
+
+.grid {
+    height: 100%;
+    margin: 0!important;
+}
+
+.column {
+    height: 100%;
+}
+
+#page-home {
+    z-index: 1;
+
+    min-height: 568px;
+    // 感觉只能JS动态设置宽度了
+    // 主要外面有个pusher不知道咋搞
+    background: url('../images/bg-home.jpg') no-repeat center;
+    background-size: cover;
+    .jumbotron {
+        a {
+            font-size: 18px;
+            padding: 10px 100px;
+            border: 1px solid @teal;
+        }
+    }
+    height:100%;
+}
+
+#page-1 {
+    background: url('../images/bg-1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#page-2 {
+    background: url('../images/bg-2.jpg') no-repeat center;
+    background-size: cover;
+    .ui.message {
+        background: #fff;
+    }
+}
+
+#page-3 {
+    background: url('../images/bg-3.jpg') no-repeat center;
+    background-size: cover;
+    .ui.message {
+        background: #fff;
+    }
+}
+
+#page-4 {
+    background: url('../images/bg-4.jpg') no-repeat center;
+    background-size: cover;
+    .ui.card{
+    	text-align:center;
+    }
+}
+
+.learnmore {
+    position: relative;
+    width: 100%;
+    bottom:100px;
+
+    text-align: center;
+    z-index:10;
+    a {
+        color: #fff;
+    }
+    i {
+        position: relative;
+        /* Firefox */
+        -webkit-animation: updown .5s infinite alternate;
+        -moz-animation: updown .5s infinite alternate;
+        /* Safari and Chrome */
+        -o-animation: updown .5s infinite alternate;
+        animation: updown .5s infinite alternate;
+
+        color: @grey;
+        /* Opera */
+    }
+}

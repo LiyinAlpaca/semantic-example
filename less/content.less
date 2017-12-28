@@ -1,0 +1,61 @@
+//嵌入全局样式
+@import (once) url('./style.less');
+
+.ui.secondary.pointing.menu {
+    position: absolute;
+    margin-bottom: 0;
+
+    width: 100%;
+    z-index: 10;
+}
+
+@media only screen and (max-width: @screen-phone) {
+    .ui.fixed.menu {
+        display: none;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+
+        border: none;
+    }
+}
+
+.ui.centered.grid {
+    position: relative ;
+    width: 100%;
+    padding: 65px 25px 25px 25px;
+    background: #ececec;
+    min-height: 100%;
+    text-align: left;
+    @media screen and (max-width: @screen-phone) {
+        padding:65px 0 25px 0;
+    }
+    .computer.only.column {
+        width: 300px;
+    }
+}
+
+
+.input-gourp {
+    display:inline-block;
+    .ui.button {
+        width: 180px;
+    }
+    @media screen and (max-width: @screen-phone) {
+        width: 100%;
+        .ui.button,.ui.input{
+            width:80%;
+        }
+    }
+}
+
+.cards{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+}
